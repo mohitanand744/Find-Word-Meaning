@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: #131313;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  & .H1 {
+    margin-bottom: 14rem;
+    font-size: 6rem;
+    color: #fff;
+  }
+}
+
+.word-meaning-card {
+  background: #ffffff;
+  width: 100%;
+  height: fit-content;
+  border-radius: 3rem;
+  box-shadow: rgba(111, 0, 255, 0.61) 0px 0px 100px 50px inset,
+    rgba(140, 0, 255, 0.692) 0px 30px 60px -30px inset,
+    rgba(173, 0, 253, 0.781) 0px -2px 6px 0px inset;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+  padding: 1rem;
+}
+
+.search-container {
+  width: 90%;
+  text-align: center;
+  margin-top: 2rem;
+  display: flex;
+  margin: 0 auto;
+}
+
+input {
+  width: 80%;
+  padding: 0.5rem 4rem;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+  outline: none;
+  font-size: 3rem;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #6900f1;
+
+  &::placeholder {
+    font-size: 2.4rem;
+    color: #ffff;
+    font-weight: bold;
+  }
+}
+
+.searchBtn {
+  flex: 1;
+  margin-left: 1rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 175, 0.808) 0px 0px 60px 1px inset,
+    rgba(122, 0, 236, 0.644) 0px 30px 60px -30px inset,
+    rgba(206, 1, 233, 0.726) 0px -2px 6px 0px inset;
+
+  &:active {
+    scale: 0.88;
+    background: #0000007c;
+  }
+}
+
+.result {
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.result-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+.ss,
+.bb {
+  cursor: pointer;
+  color: #6900f1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 4rem;
+
+  &:active {
+    scale: 1.4;
+  }
+}
+
+.defination {
+  font-size: 3.5rem;
+  margin-top: 3rem;
+  font-weight: bold;
+  margin-left: 2rem;
+}
+
+.detailed-info {
+  font-size: 3.5rem;
+  border-left: 6px solid #6900f1;
+  padding-left: 1.6rem;
+  font-weight: bold;
+}
+.example {
+  font-size: 2.6rem;
+  margin-left: 0.2rem;
+  margin-top: -2rem;
+  color: #7e7e7e;
+  font-weight: bold;
+}
+
+@media screen and (width < 738px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (width < 538px) {
+  html {
+    font-size: 40%;
+  }
+  .searchBtn {
+    padding: 1rem;
+    font-size: 3.5rem;
+    padding: 1.5rem 3rem;
+  }
+  input {
+    font-size: 3.7rem;
+
+    &::placeholder {
+      font-size: 3rem;
+    }
+  }
+
+  .defination {
+    font-size: 4.5rem;
+    margin-top: 3rem;
+    font-weight: bold;
+    margin-left: 2rem;
+  }
+
+  .detailed-info {
+    font-size: 4.5rem;
+    border-left: 6px solid #6900f1;
+    padding-left: 1.6rem;
+    font-weight: bold;
+  }
+  .example {
+    font-size: 3.6rem;
+    margin-left: 0.2rem;
+    margin-top: -2rem;
+    color: #7e7e7e;
+    font-weight: bold;
+  }
+}
+
+@media screen and (width < 390px) {
+  html {
+    font-size: 30%;
+  }
+  .searchBtn {
+    padding: 1rem;
+    font-size: 3.8rem;
+    padding: 1.5rem 3rem;
+  }
+  input {
+    font-size: 4rem;
+
+    &::placeholder {
+      font-size: 3.4rem;
+    }
+  }
+
+  .defination {
+    font-size: 5rem;
+    margin-top: 3rem;
+    font-weight: bold;
+    margin-left: 2rem;
+  }
+
+  .detailed-info {
+    font-size: 5rem;
+    border-left: 6px solid #6900f1;
+    padding-left: 1.6rem;
+    font-weight: bold;
+  }
+  .example {
+    font-size: 4.6rem;
+    margin-left: 0.2rem;
+    margin-top: -2rem;
+    color: #7e7e7e;
+    font-weight: bold;
+  }
+  .search-container {
+    width: 100%;
+  }
+}
